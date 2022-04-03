@@ -9,6 +9,12 @@ html{
     background-color: #f8f9fa;
 }
 
+.row>*{
+    max-width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 0;
+}
 
         /* index */
 
@@ -18,12 +24,34 @@ html{
             }
                     
             .navegacion{
-                background-color: #6c757d;
+                /*background-color: #6c757d;*/
                 color: #f34418;
-                width: 100vw;
-                height: 20vh;
+                /*width: 100vw;
+                height: 20vh;*/
                 grid-area: navegacion;
             }
+
+            /* modificando clases de bootstrap 
+        
+            .bg-light {
+            background-color: #a9b5c0!important;
+            height: 10vh;
+        }*/
+
+        .nav-item{
+            padding: 25px;
+            font-size: 1.8rem;
+
+        }
+
+        .navbar-nav{
+           margin-left: 16vw;
+        }
+
+        .navbar-brand img{
+            width: 10vw;
+            padding: 5px;
+        }
 
             .flexNav{
                 display: flex;
@@ -37,7 +65,7 @@ html{
 
             .menu li{
                 display: inline-block;
-                font-size: 20px;
+                font-size: 1.5rem;
                 padding: 10px 65px;
                 font-family: 'Kaushan Script', cursive;
                 color: rgb(33, 190, 80);
@@ -55,24 +83,29 @@ html{
                 width: 100px;
             }
 
+            .carrusel img{
+                width: 100vw;
+                height: 100vh;
+            }
+/*
             .fotoPrincipal__Index{
                 background-image: url(../imagenes/inicio.jpg);
                 width: 100%;
                 height: 100%;
                 grid-area: imagenPrincipal;
-            }
+            }*/
 
             .tituloIndex{
                 text-align: center;
                 grid-area: tituloIndex;
             }
             .tituloIndex h2{
-                font-size: 35px;
-                margin-top: 55px;
+                font-size: 2rem;
+               /* margin-top: 55px;*/
             }
 
             .tituloIndex p{
-                font-size: 25px;
+                font-size: 2rem;
             }
 
             .contenidoIndex{
@@ -106,123 +139,163 @@ html{
             .footer{
                 background-color: black;
                 grid-area: footer;
-                width: 100vw;
+            }
+
+            .footer div img{
+                width: 5vw;
+                height: 8vh;                
             }
 
 
+              /* servicios */
 
-            /* Staff */
+              .contenidoServicios div:hover{
+                transform: translateY(-50px);
+              
+        }
 
-            .tituloStaff{
-                background-color: #d6e2e9;
-                grid-area: tituloStaff;
-            }
-            .tituloStaff h2{
-                font-size: 35px;
-                margin-top: 55px;
-                text-align: center;
-            }
+        .tituloServicios{
+            background-color: #d6e2e9;
+            grid-area: tituloServicios;
+        }
+        .tituloServicios h2{
+            font-size: 2rem;
+            /*margin-top: 55px;*/
+            text-align: center;
+            padding: 20px;
+            margin-bottom:0;
+        }
 
-            .contenidoStaff{
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
-                grid-area: contenidoStaff;
-                background-color: #d6e2e9;
-                
-            }
-
-            .contenidoStaff div h3{
-                margin: 10px;
-                padding-left: 10px;
-            }
-
-            .contenidoStaff div h4{
-                margin: 10px;
-                padding-left: 10px;
-            }
-
-            .contenidoStaff div{
-                margin:20px;
-            }
-
-            .contenidoStaff div img{
-                width: 10vw;
-                height: 10vh;
-                margin: 10px;
-                padding: 10px;
-            }
-
+        .contenidoServicios{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            grid-area: contenidoServicios;
+            background-color: #d6e2e9;
+            padding-bottom: 20px;
         
-            /* servicios */
+        }
 
-            .contenidoServicios div:hover{
-                    transform: translateY(-50px);
-                  
-            }
+        .contenidoServicios div h3{
+            margin: 10px;
+            padding-left: 10px;
+            font-size: 1.2rem;
+        }
 
-            .tituloServicios{
-                background-color: #d6e2e9;
-                grid-area: tituloServicios;
-            }
-            .tituloServicios h2{
-                font-size: 35px;
-                margin-top: 55px;
-                text-align: center;
-                padding: 20px;
-            }
+        .contenidoServicios div h4{
+            margin: 10px;
+            padding-left: 10px;
+        }
 
-            .contenidoServicios{
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
-                grid-area: contenidoServicios;
-                background-color: #d6e2e9;
-                padding-bottom: 20px;
+        .contenidoServicios div{
+           /* border-style: solid;*/
+            border-width: 1px;
+            height: 45vh;
+            width: 25vw;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 30px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.575);
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
             
-            }
+        }
 
-            .contenidoServicios div h3{
-                margin: 10px;
-                padding-left: 10px;
-            }
+        .contenidoServicios div img{
+            width: 25vw;
+            height: 28vh;
+            /*margin: 10px;
+            padding: 10px;
+            transform: translatex(15px);*/
+        }
 
-            .contenidoServicios div h4{
-                margin: 10px;
-                padding-left: 10px;
-            }
+        .contenidoServicios div p{
+            margin: 10px;
+            font-size: 0.8rem;
+        }
 
-            .contenidoServicios div{
-               /* border-style: solid;*/
-                border-width: 1px;
-                height: 45vh;
-                width: 25vw;
-                border-radius: 8px;
-                overflow: hidden;
-                margin: 30px;
-                text-align: center;
-                background: rgba(255, 255, 255, 0.575);
-                box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-                
-            }
+ /* MEDIA QUERIS */
 
-            .contenidoServicios div img{
-                width: 25vw;
-                height: 28vh;
-                /*margin: 10px;
-                padding: 10px;
-                transform: translatex(15px);*/
-            }
+ @media (max-width: 1024px) {
+    .navbar-nav{
+         margin-left: 6vw;
+         }
+     }
 
-            .contenidoServicios div p{
-                margin: 10px;
-            }
+ @media (max-width: 768px) {
+     .contenidoIndex div img{
+         width: 30vw;
+         height: 20vh;
+         }
 
-            /* contenedores GRIDS */
+     .navbar-brand img{
+         width:10vw;
+     }
+
+     .contenidoServicios div{
+         height: 40vh;
+         width: 40vw;
+     
+     }
+
+     .contenidoServicios div img{
+         width: 40vw;
+         height: 20vh;
+     }
+}
+     
+
+
+     
+     @media (max-width: 426px) {
+         .contenidoIndex{
+             flex-wrap: wrap;
+         } 
+
+         .contenidoIndex div img{
+             width: 75vw;
+             height: 35vh;
+             margin-left: 25px;
+         } 
+         
+         .contenidoIndex div h3{
+             padding-top: 10px;
+            
+         }
+
+         .footer div img{
+            height: 5vh;
+         }
+
+         .contenidoServicios{
+             flex-wrap: wrap;
+         } 
+         
+         .contenidoServicios div{
+             height: 43vh;
+             width: 60vw;
+         }
+
+         .contenidoServicios div img{
+             width: 60vw;
+         }
+
+
+     }
+
+
+
+          
+
+         
+
+
+
+
+
+    /*contenedores GRIDS 
 
             .contendorIndex__Grid{
                 display: grid;
@@ -268,4 +341,4 @@ html{
                 align-items: stretch;
                 justify-content: center;
                 align-content: center;
-            }
+            } */ 
