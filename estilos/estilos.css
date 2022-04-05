@@ -216,6 +216,156 @@ html{
             font-size: 0.8rem;
         }
 
+
+/* Staff */
+
+.tituloStaff{
+    background-color: #d6e2e9;
+    grid-area: tituloStaff;
+}
+.tituloStaff h2{
+    font-size: 2rem;
+   /*margin-top: 55px;*/
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+.contenidoStaff{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    grid-area: contenidoStaff;
+    background-color: #d6e2e9;
+
+    
+    
+}
+
+.contenidoStaff div h3{
+    margin: 10px;
+    padding-left: 10px;
+    font-size: 1.5rem;
+}
+
+.contenidoStaff div h4{
+    margin: 10px;
+    padding-left: 10px;
+    font-size: 1.5rem;
+}
+
+.contenidoStaff div{
+    margin:20px;
+}
+
+.contenidoStaff div img{
+    width: 20vw;
+    height: 40vh;
+    margin: 10px;
+    /* padding: 10px; */
+    border-radius: 8px;
+    border-width: 1px;
+    box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+}
+
+             /* Contacto */
+
+             .tituloContacto{
+                background-color: #d6e2e9;
+                grid-area: tituloStaff;
+            }
+            .tituloContacto h2{
+                font-size: 2rem;
+            /*margin-top: 55px;*/
+                text-align: center;
+                padding: 20px;
+                margin-bottom: 0;
+            }
+
+            .contenidoContacto{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                grid-area: contenidoStaff;
+                background-color: #d6e2e9;
+
+                
+                
+            }
+
+            .contenidoContacto div h3{
+                margin: 10px;
+                padding-left: 10px;
+            }
+
+            .contenidoContacto div h4{
+                margin: 10px;
+                padding-left: 10px;
+            }
+
+            .contenidoContacto div{
+                margin:20px;
+            }
+
+            .contenidoContacto div img{
+                width: 20vw;
+                height: 40vh;
+                margin: 10px;
+                /* padding: 10px; */
+                border-radius: 8px;
+                border-width: 1px;
+                box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+            }
+            .contenidoContacto button{
+                margin: 25px;
+            }
+        
+
+             /* ubicacion */
+
+             .contenidoUbicacion{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                background-color: #d6e2e9;
+
+                
+                
+            }
+
+            .mapa{
+                width: 40vw;
+                height: 40vh;
+            }
+
+            .contenidoUbicacion h3{
+                font-size: 1.5rem;
+                margin: 20px;
+            }
+
+            
+
+            .tituloUbicacion{
+                background-color: #d6e2e9;
+                grid-area: tituloStaff;
+            }
+            .tituloUbicacion h2{
+                font-size: 2rem;
+            /*margin-top: 55px;*/
+                text-align: center;
+                padding: 20px;
+                margin-bottom: 0;
+            }
+         
+
+
+
  /* MEDIA QUERIS */
 
  @media (max-width: 1024px) {
@@ -243,6 +393,10 @@ html{
      .contenidoServicios div img{
          width: 40vw;
          height: 20vh;
+     }
+
+     .contenidoStaff div img{
+         height: 25vh;
      }
 }
      
@@ -282,15 +436,18 @@ html{
              width: 60vw;
          }
 
+         .contenidoStaff div img{
+            width:40vw;
+        }
 
+        .mapa{
+            width: 70vw;
+            height: 35vh;
+        }
      }
 
 
-
-          
-
-         
-
+ 
 
 
 
