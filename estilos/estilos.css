@@ -101,7 +101,7 @@ html{
             }
             .tituloIndex h2{
                 font-size: 2rem;
-               /* margin-top: 55px;*/
+               margin-top: 55px;
             }
 
             .tituloIndex p{
@@ -261,13 +261,20 @@ html{
 }
 
 .contenidoStaff div img{
-    width: 20vw;
+    width: 19vw;
     height: 40vh;
     margin: 10px;
     /* padding: 10px; */
     border-radius: 8px;
     border-width: 1px;
     box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+    filter: grayscale(100%);
+    transition: all 2s;
+}
+
+.contenidoStaff div img:hover{
+    filter: none;
+    transform: scale(1.1);
 }
 
              /* Contacto */
@@ -291,10 +298,16 @@ html{
                 justify-content: center;
                 align-items: center;
                 grid-area: contenidoStaff;
-                background-color: #d6e2e9;
+                /*background-color: #d6e2e9;*/
+                background-image: url("../imagenes/carrusel1.jpg");
+                height: 70vh;
+                background-repeat: no-repeat;
+                background-size: cover; 
+                
+            }
 
-                
-                
+            .form-label{
+                color:white
             }
 
             .contenidoContacto div h3{
@@ -428,16 +441,18 @@ html{
          } 
          
          .contenidoServicios div{
-             height: 43vh;
-             width: 60vw;
+            height: 65vh;
+            width: 60vw;
          }
 
          .contenidoServicios div img{
-             width: 60vw;
+            width: 60vw;
+            height: 30vh;
          }
 
          .contenidoStaff div img{
-            width:40vw;
+            width: 50vw;
+            height: 50vh;
         }
 
         .mapa{
