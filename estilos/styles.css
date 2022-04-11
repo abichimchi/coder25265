@@ -1,0 +1,509 @@
+.bg-light {
+  /*--bs-bg-opacity: 1; 
+    background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important; */
+  background: linear-gradient(#b79891, #94716b);
+  height: 12vh; }
+
+.fondoGeneral {
+  /*background:linear-gradient(to right, rgb(225, 238, 195), rgb(240, 80, 83));*/
+  background: white; }
+
+/* index */
+.header {
+  position: sticky;
+  z-index: 1000; }
+
+.navegacion {
+  /*background-color: #6c757d;*/
+  /*width: 100vw;
+    height: 20vh;*/
+  grid-area: navegacion; }
+
+/* modificando clases de bootstrap 
+  
+      .bg-light {
+      background-color: #a9b5c0!important;
+      height: 10vh;
+  }*/
+.nav-item {
+  padding: 25px;
+  font-size: 1.8rem; }
+
+.navbar-nav nav-item {
+  transition: background-color 3s; }
+
+li:hover {
+  background-color: rgba(255, 255, 255, 0.548); }
+
+.navbar-nav {
+  margin-left: 16vw;
+  font-family: 'EB Garamond', serif;
+  font-weight: 550; }
+
+.navbar-brand img {
+  width: 22vw;
+  height: 15vh;
+  /* padding: 5px; */
+  margin-left: 10px; }
+
+.flexNav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+.menu li {
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 10px 65px;
+  font-family: 'Kaushan Script', cursive;
+  color: #21be50;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 3s; }
+  .menu li:hover {
+    background-color: red; }
+  .menu li a {
+    text-decoration: none; }
+  .menu li img {
+    height: 100px;
+    width: 100px; }
+
+.carrusel img {
+  width: 100vw;
+  height: 100vh; }
+
+/*
+              .fotoPrincipal__Index{
+                  background-image: url(../imagenes/inicio.jpg);
+                  width: 100%;
+                  height: 100%;
+                  grid-area: imagenPrincipal;
+              }*/
+.tituloIndex {
+  text-align: center;
+  grid-area: tituloIndex; }
+  .tituloIndex h2 {
+    font-size: 3rem;
+    margin-top: 35px;
+    font-family: 'EB Garamond', serif;
+    font-weight: 800;
+    font-style: italic; }
+  .tituloIndex p {
+    font-size: 2rem;
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    margin-bottom: 3rem; }
+
+.contenidoIndex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  grid-area: contenidoIndex;
+  background: #a2a2a2;
+  background: linear-gradient(90deg, rgba(162, 162, 162, 0.936012) 0%, black 88%);
+  color: white; }
+  .contenidoIndex div {
+    margin: 20px; }
+    .contenidoIndex div h3 {
+      margin: 10px;
+      padding-left: 10px;
+      font-family: 'EB Garamond', serif;
+      font-weight: 550; }
+    .contenidoIndex div img {
+      width: 30vw;
+      height: 30vh;
+      border-radius: 18px;
+      box-shadow: 1px 2px 9px 0px #343333; }
+    .contenidoIndex div p {
+      margin: 20px;
+      font-family: 'EB Garamond', serif;
+      font-weight: 400;
+      font-size: 1.5rem; }
+
+.footer {
+  background-color: black;
+  grid-area: footer; }
+  .footer div img {
+    width: 5vw;
+    height: 8vh; }
+
+
+
+
+    /* resto de css sin SASS */
+
+                  /* servicios */
+
+                  .contenidoServicios div:hover{
+                    transform: translateY(-50px);
+                  
+            }
+    
+            .tituloServicios{
+                background-color: #d6e2e9;
+                grid-area: tituloServicios;
+            }
+            .tituloServicios h2{
+                font-size: 2rem;
+                /*margin-top: 55px;*/
+                text-align: center;
+                padding: 20px;
+                margin-bottom:0;
+            }
+    
+            .contenidoServicios{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                grid-area: contenidoServicios;
+                background-color: #d6e2e9;
+                padding-bottom: 20px;
+            
+            }
+    
+            .contenidoServicios div h3{
+                margin: 10px;
+                padding-left: 10px;
+                font-size: 1.2rem;
+            }
+    
+            .contenidoServicios div h4{
+                margin: 10px;
+                padding-left: 10px;
+            }
+    
+            .contenidoServicios div{
+               /* border-style: solid;*/
+                border-width: 1px;
+                height: 45vh;
+                width: 25vw;
+                border-radius: 8px;
+                overflow: hidden;
+                margin: 30px;
+                text-align: center;
+                background: rgba(255, 255, 255, 0.575);
+                box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+                
+            }
+    
+            .contenidoServicios div img{
+                width: 25vw;
+                height: 28vh;
+                /*margin: 10px;
+                padding: 10px;
+                transform: translatex(15px);*/
+            }
+    
+            .contenidoServicios div p{
+                margin: 10px;
+                font-size: 0.8rem;
+            }
+    
+    
+    /* Staff */
+    
+    .tituloStaff{
+        background-color: #d6e2e9;
+        grid-area: tituloStaff;
+    }
+    .tituloStaff h2{
+        font-size: 2rem;
+       /*margin-top: 55px;*/
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 0;
+    }
+    
+    .contenidoStaff{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        grid-area: contenidoStaff;
+        background-color: #d6e2e9;
+    
+        
+        
+    }
+    
+    .contenidoStaff div h3{
+        margin: 10px;
+        padding-left: 10px;
+        font-size: 1.5rem;
+    }
+    
+    .contenidoStaff div h4{
+        margin: 10px;
+        padding-left: 10px;
+        font-size: 1.5rem;
+    }
+    
+    .contenidoStaff div{
+        margin:20px;
+    }
+    
+    .contenidoStaff div img{
+        width: 19vw;
+        height: 40vh;
+        margin: 10px;
+        /* padding: 10px; */
+        border-radius: 8px;
+        border-width: 1px;
+        box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+        filter: grayscale(100%);
+        transition: all 2s;
+    }
+    
+    .contenidoStaff div img:hover{
+        filter: none;
+        transform: scale(1.1);
+    }
+    
+                 /* Contacto */
+    
+                 .tituloContacto{
+                    background-color: #d6e2e9;
+                    grid-area: tituloStaff;
+                }
+                .tituloContacto h2{
+                    font-size: 2rem;
+                /*margin-top: 55px;*/
+                    text-align: center;
+                    padding: 20px;
+                    margin-bottom: 0;
+                }
+    
+                .contenidoContacto{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    grid-area: contenidoStaff;
+                    /*background-color: #d6e2e9;*/
+                    background-image: url("../imagenes/carrusel1.jpg");
+                    height: 70vh;
+                    background-repeat: no-repeat;
+                    background-size: cover; 
+                    
+                }
+    
+                .form-label{
+                    color:white
+                }
+    
+                .mensaje{
+                    padding: 2.375rem 0.75rem;
+                }
+                .contenidoContacto div h3{
+                    margin: 10px;
+                    padding-left: 10px;
+                }
+    
+                .contenidoContacto div h4{
+                    margin: 10px;
+                    padding-left: 10px;
+                }
+    
+                .contenidoContacto div{
+                    margin:20px;
+                }
+    
+                .contenidoContacto div img{
+                    width: 20vw;
+                    height: 40vh;
+                    margin: 10px;
+                    /* padding: 10px; */
+                    border-radius: 8px;
+                    border-width: 1px;
+                    box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+                }
+                .contenidoContacto button{
+                    margin: 25px;
+                }
+            
+    
+                 /* ubicacion */
+    
+                 .contenidoUbicacion{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #d6e2e9;
+    
+                    
+                    
+                }
+    
+                .mapa{
+                    width: 40vw;
+                    height: 40vh;
+                }
+    
+                .contenidoUbicacion h3{
+                    font-size: 1.5rem;
+                    margin: 20px;
+                }
+    
+                
+    
+                .tituloUbicacion{
+                    background-color: #d6e2e9;
+                    grid-area: tituloStaff;
+                }
+                .tituloUbicacion h2{
+                    font-size: 2rem;
+                /*margin-top: 55px;*/
+                    text-align: center;
+                    padding: 20px;
+                    margin-bottom: 0;
+                }
+             
+    
+    
+    
+     /* MEDIA QUERIS */
+    
+     @media (max-width: 1024px) {
+        .navbar-nav{
+             margin-left: 6vw;
+             }
+         }
+    
+     @media (max-width: 768px) {
+         .contenidoIndex div img{
+             width: 30vw;
+             height: 20vh;
+             }
+    
+         .navbar-brand img{
+             width:10vw;
+         }
+    
+         .contenidoServicios div{
+             height: 40vh;
+             width: 40vw;
+         
+         }
+    
+         .contenidoServicios div img{
+             width: 40vw;
+             height: 20vh;
+         }
+    
+         .contenidoStaff div img{
+             height: 25vh;
+         }
+    }
+         
+    
+    
+         
+         @media (max-width: 426px) {
+             .contenidoIndex{
+                 flex-wrap: wrap;
+             } 
+    
+             .contenidoIndex div img{
+                 width: 75vw;
+                 height: 35vh;
+                 margin-left: 25px;
+             } 
+             
+             .contenidoIndex div h3{
+                 padding-top: 10px;
+                
+             }
+    
+             .footer div img{
+                height: 5vh;
+             }
+    
+             .contenidoServicios{
+                 flex-wrap: wrap;
+             } 
+             
+             .contenidoServicios div{
+                height: 65vh;
+                width: 60vw;
+             }
+    
+             .contenidoServicios div img{
+                width: 60vw;
+                height: 30vh;
+             }
+    
+             .contenidoStaff div img{
+                width: 50vw;
+                height: 50vh;
+            }
+    
+            .mapa{
+                width: 70vw;
+                height: 35vh;
+            }
+         }
+    
+    
+     
+    
+    
+    
+    
+        /*contenedores GRIDS 
+    
+                .contendorIndex__Grid{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    grid-template-rows: 0.2fr 2fr 0.5fr 1.5fr 0.7fr;
+                    grid-template-areas:
+                        "navegacion navegacion navegacion navegacion"
+                        "imagenPrincipal imagenPrincipal imagenPrincipal imagenPrincipal"
+                        "tituloIndex tituloIndex tituloIndex tituloIndex"
+                        "contenidoIndex contenidoIndex contenidoIndex contenidoIndex"
+                        "footer footer footer footer";
+                    justify-items: stretch;
+                    align-items: stretch;
+                    justify-content: center;
+                    align-content: center;
+                }
+    
+                .contendorStaff__Grid{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    grid-template-rows: 2fr 1.2fr 5fr 2fr;
+                    grid-template-areas:
+                        "navegacion navegacion navegacion navegacion"
+                        "tituloStaff tituloStaff tituloStaff tituloStaff"
+                        "contenidoStaff contenidoStaff contenidoStaff contenidoStaff"
+                        "footer footer footer footer";
+                    justify-items: stretch;
+                    align-items: stretch;
+                    justify-content: center;
+                    align-content: center;
+                }
+    
+                .contendorServicios__Grid{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    grid-template-rows: 1fr 1fr 5.5fr 1fr;
+                    grid-template-areas:
+                        "navegacion navegacion navegacion navegacion"
+                        "tituloServicios tituloServicios tituloServicios tituloServicios"
+                        "contenidoServicios contenidoServicios contenidoServicios contenidoServicios"
+                        "footer footer footer footer";
+                    justify-items: stretch;
+                    align-items: stretch;
+                    justify-content: center;
+                    align-content: center;
+                } */ 
