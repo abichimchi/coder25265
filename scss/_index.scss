@@ -1,174 +1,203 @@
 @import "variables";
 
 .bg-light {
-    /*--bs-bg-opacity: 1; 
+  /*--bs-bg-opacity: 1; 
     background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important; */
-    background: $colorNavBar;
-    height: 12vh;
-  }
-  
-  .fondoGeneral {
-    /*background:linear-gradient(to right, rgb(225, 238, 195), rgb(240, 80, 83));*/
-    background: $colorFondo;
-  }
-  
-  /* index */
-  
-  .header {
-    position: sticky;
-    z-index: 1000;
-  }
-  
-  .navegacion {
-    /*background-color: #6c757d;*/ 
-    /*width: 100vw;
+  background: $colorNavBar;
+  height: 12vh;
+}
+
+.fondoGeneral {
+  /*background:linear-gradient(to right, rgb(225, 238, 195), rgb(240, 80, 83));*/
+  background: $colorFondo;
+}
+
+/* index */
+
+.header {
+  position: sticky;
+  z-index: 1000;
+}
+
+.navegacion {
+  /*background-color: #6c757d;*/
+  /*width: 100vw;
     height: 20vh;*/
-    grid-area: navegacion;
-  }
-  
-      /* modificando clases de bootstrap 
+  grid-area: navegacion;
+}
+
+/* modificando clases de bootstrap 
   
       .bg-light {
       background-color: #a9b5c0!important;
       height: 10vh;
   }*/
-  
-  .nav-item {
-    padding: 25px;
-    font-size: 1.8rem;
+
+.nav-item {
+  padding: 20px;
+  font-size: 1.5rem;
+}
+
+.navbar-nav nav-item {
+  transition: background-color 3s;
+}
+
+li:hover {
+  background-color: rgba(255, 255, 255, 0.548);
+}
+
+.navbar-nav {
+  margin-left: 16vw;
+  font-family: 'EB Garamond', serif;
+  font-weight: 550;
+}
+
+.navbar-brand img {
+  width: 22vw;
+  height: 15vh;
+
+  /* padding: 5px; */
+  margin-left: 10px;
+}
+
+
+.menu li {
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 10px 65px;
+  font-family: 'Kaushan Script', cursive;
+  color: rgb(33, 190, 80);
+  justify-content: center;
+  align-items: center;
+  transition: background-color 3s;
+
+  &:hover {
+    background-color: red;
   }
-  
-  .navbar-nav nav-item {
-    transition: background-color 3s;
+
+  a {
+    text-decoration: none;
   }
-  
-  li:hover {
-    background-color: rgba(255, 255, 255, 0.548);
+
+  img {
+    height: 100px;
+    width: 100px;
   }
-  
-  .navbar-nav {
-    margin-left: 16vw;
+}
+
+.carrusel img {
+  width: 100vw;
+  height: 100vh;
+}
+
+
+
+.tituloIndex {
+  text-align: center;
+  grid-area: tituloIndex;
+
+  h2 {
+    font-size: 3rem;
+    margin-top: 35px;
     font-family: 'EB Garamond', serif;
-    font-weight: 550;
+    font-weight: 800;
+    font-style: italic;
   }
-  
-  .navbar-brand img {
-    width: 22vw;
-    height: 15vh;
-  
-    /* padding: 5px; */
-    margin-left: 10px;
+
+  p {
+    font-size: 2rem;
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    margin-bottom: 3rem;
   }
-  
-  .flexNav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+}
+
+
+
+/* mapa */
+
+$redes: (calidad: #f10000,
+  experiencia: #ff640a,
+  amor: #ffd561);
+
+@each $red,
+$color in $redes {
+  .#{$red} {
+    color: $color;
   }
-  
-  .menu li {
-    display: inline-block;
-    font-size: 1.5rem;
-    padding: 10px 65px;
-    font-family: 'Kaushan Script', cursive;
-    color: rgb(33, 190, 80);
-    justify-content: center;
-    align-items: center;
-    transition: background-color 3s;
-  
-    &:hover {
-      background-color: red;
-    }
-  
-    a {
-      text-decoration: none;
-    }
-  
-    img {
-      height: 100px;
-      width: 100px;
-    }
-  }
-  
-  .carrusel img {
-    width: 100vw;
-    height: 100vh;
-  }
-  
-  /*
-              .fotoPrincipal__Index{
-                  background-image: url(../imagenes/inicio.jpg);
-                  width: 100%;
-                  height: 100%;
-                  grid-area: imagenPrincipal;
-              }*/
-  
-  .tituloIndex {
-    text-align: center;
-    grid-area: tituloIndex;
-  
-    h2 {
-      font-size: 3rem;
-      margin-top: 35px;
+}
+
+.flexNav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+/* extend */
+
+%flexNav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contenidoIndex {
+  @extend %flexNav;
+  background: rgb(162, 162, 162);
+  background: linear-gradient(90deg, rgba(162, 162, 162, 0.9360119048) 0%, rgba(0, 0, 0, 1) 88%);
+  color: white;
+  margin: 20px;
+
+  div {
+    h3 {
+      margin: 10px;
+      padding-left: 10px;
       font-family: 'EB Garamond', serif;
-      font-weight: 800;
-      font-style: italic;
+      font-weight: 550;
     }
-  
+
+    img {
+      width: 30vw;
+      height: 30vh;
+      border-radius: 18px;
+      box-shadow: 1px 2px 9px 0px #343333;
+    }
+
     p {
-      font-size: 2rem;
+      margin: 20px;
       font-family: 'EB Garamond', serif;
       font-weight: 400;
-      margin-bottom: 3rem;
+      font-size: 1.5rem;
     }
   }
-  
-  .contenidoIndex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    grid-area: contenidoIndex;
-    background: rgb(162, 162, 162);
-    background: linear-gradient(90deg, rgba(162, 162, 162, 0.9360119048) 0%, rgba(0, 0, 0, 1) 88%);
-    color: white;
-  
-    div {
-      h3 {
-        margin: 10px;
-        padding-left: 10px;
-        font-family: 'EB Garamond', serif;
-        font-weight: 550;
-      }
-  
-      margin: 20px;
-  
-      img {
-        width: 30vw;
-        height: 30vh;
-        border-radius: 18px;
-        box-shadow: 1px 2px 9px 0px #343333;
-      }
-  
-      p {
-        margin: 20px;
-        font-family: 'EB Garamond', serif;
-        font-weight: 400;
-        font-size: 1.5rem;
-      }
-    }
+}
+
+/*mixins*/
+
+@mixin fonts($font-size, $font-weight, $font-style) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  font-style: $font-style;
+}
+
+.tituloIndex {
+  h2 {
+    @include fonts(3rem, 800, italic);
+    font-family: 'EB Garamond', serif;
+    margin-top: 35px;
   }
-  
-  .footer {
-    background-color: black;
-    grid-area: footer;
-  
-    div img {
-      width: 5vw;
-      height: 8vh;
-    }
+
+  p {
+    @include fonts(2rem, 400, normal);
+    font-family: 'EB Garamond', serif;
+    margin-bottom: 3rem;
   }
+
+}

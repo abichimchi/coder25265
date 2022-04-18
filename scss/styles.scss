@@ -1,2 +1,50 @@
-@import "index";
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-size: 62,5%;
+    background-color: #f8f9fa;
+  }
+  
+  .row > * {
+    max-width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 0;
+  }
+
+
+  /* footer */
+
+  .sitemap {
+    padding: 0px;
+    font-size: 1.5rem;
+  }
+  
+  .nombre{
+    padding-left: 20px;
+  }
+  
+  .footer{
+    background-color: black;
+      font-family: 'EB Garamond', serif;
+      font-weight: 400;
+      margin-bottom: 3rem;
+  }
+  
 @import "variables";
+
+@import "index";
+
+@import "servicios";
+
+@import "staff";
+
+@import "ubicacion";
+
+@import "contacto";
+
+@import "media";
+

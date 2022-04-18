@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imperial Dog Hotel</title>
+    <meta name="keywords" content="hotel, buenos aires, argentina, hotel spa buenos aires, veterinaria, spa para perros, adiestramiento canino, adiestramiento de perros ">
+    <meta name="description" content="La ubicación del Imperial Dog Hotel es en la Ciudad de Buenos Aires, en el barrio de Puerto Madero.">
+    <title>Imperial Dog Hotel, podes encontrar nuestra ubicación y número teléfonico</title>
     <link rel="shortcut icon" href="../imagenes/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -13,7 +15,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="../estilos/styles.css">
+    <link rel="stylesheet" href="../estilos/styles.css">
 </head>
 
 <body>
@@ -22,7 +24,7 @@
             <nav class="navegacion col-12">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="../index.html"><img src="../imagenes/logo2.png" alt=""></a>
+                        <a class="navbar-brand" href="../index.html"><img src="../imagenes/logoCanva.png" alt=""></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                             aria-label="Toggle navigation">
@@ -53,13 +55,8 @@
         </header>
 
         <div class="row">
-            <div class="col-12">
-
-                <div class="tituloUbicacion">
-                    <h2 class="animate__animated animate__fadeInLeftBig">Ubicación</h2>
-                </div>
-
-
+            <div class="col-12 backgroundUbicacion">
+                <h2 class="tituloUbicacion animate__animated animate__fadeInLeftBig">Ubicación</h2>
                 <div class="contenidoUbicacion">
                     <iframe class="mapa"
                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13136.066850016401!2d-58.3815704!3d-34.6037389!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1649120852111!5m2!1ses-419!2sar"
@@ -74,30 +71,25 @@
             </div>
         </div>
 
-        <footer class="row footer">
-            <div class="col-12">
-                <div class="container">
-                    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-                        <div class="col-md-4 d-flex align-items-center">
-                            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                                <svg class="bi" width="30" height="24">
-                                    <use xlink:href="#bootstrap" />
-                                </svg>
-                            </a>
-                            <span class="text-muted">&copy; 2022 Imperial Dog Hotel</span>
-                        </div>
-
-                        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                            <!-- <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><img src="imagenes/twitter.png" alt=""> </svg></a></li> -->
-                            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><img
-                                            src="../imagenes/instagram.png" alt=""></svg></a></li>
-                            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><img
-                                            src="../imagenes/facebook.png" alt=""></svg></a></li>
-                        </ul>
-                    </footer>
-                </div>
+        <footer class="footer row row-cols-5 py-5  border-top">
+            <div class="col nombre">
+              <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+              </a>
+              <p class="text-muted">&copy; 2022</p>
             </div>
-        </footer>
+
+        
+            <div class="col">
+              <h5>Imperial Dog Hotel</h5>
+              <ul class="nav flex-column">
+                <li class="sitemap"><a href="index.html" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="sitemap"><a href="paginas/servicios.html" class="nav-link p-0 text-muted">Servicios</a></li>
+                <li class="sitemap"><a href="paginas/staff.html" class="nav-link p-0 text-muted">Staff</a></li>
+                <li class="sitemap"><a href="paginas/ubicacion.html" class="nav-link p-0 text-muted">Ubicación</a></li>
+                <li class="sitemap"><a href="paginas/contacto.html" class="nav-link p-0 text-muted">Contacto</a></li>
+              </ul>
+            </div>
 
 
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"

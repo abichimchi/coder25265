@@ -1,0 +1,78 @@
+/* MEDIA QUERIS */
+
+@media (max-width: 1024px) {
+    .navbar-nav {
+      margin-left: 6vw;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .contenidoIndex div img {
+      width: 30vw;
+      height: 20vh;
+    }
+  
+    .navbar-brand img {
+      width: 10vw;
+    }
+  
+    .contenidoServicios div {
+      height: 40vh;
+      width: 40vw;
+  
+      img {
+        width: 40vw;
+        height: 20vh;
+      }
+    }
+  
+    .contenidoStaff div img {
+      height: 25vh;
+    }
+  }
+  
+  @media (max-width: 426px) {
+    .contenidoIndex {
+      flex-wrap: wrap;
+  
+      div {
+        img {
+          width: 75vw;
+          height: 35vh;
+          margin-left: 25px;
+        }
+  
+        h3 {
+          padding-top: 10px;
+        }
+      }
+    }
+  
+    .footer div img {
+      height: 5vh;
+    }
+  
+    .contenidoServicios {
+      flex-wrap: wrap;
+  
+      div {
+        height: 65vh;
+        width: 60vw;
+  
+        img {
+          width: 60vw;
+          height: 30vh;
+        }
+      }
+    }
+  
+    .contenidoStaff div img {
+      width: 50vw;
+      height: 50vh;
+    }
+  
+    .mapa {
+      width: 70vw;
+      height: 35vh;
+    }
+  }
