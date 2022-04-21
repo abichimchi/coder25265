@@ -1,8 +1,6 @@
-/* ubicacion */
+@import "variables";
 
-.backgroundUbicacion{
-    background-color: #d6e2e9;
-}
+/* ubicacion */
 
 .tituloUbicacion{
     font-size: 3rem;
@@ -23,12 +21,14 @@
   }
   
   .mapa {
-    width: 40vw;
-    height: 40vh;
+    width: 64vw;
+    height: 59vh;
+    margin-bottom: 20px;
   }
   
   .contenidoUbicacion h3 {
     font-size: 1.5rem;
-    margin: 20px;
+    margin-bottom: 20px;
+    color:$colorFont;
   }
   

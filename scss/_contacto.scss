@@ -1,5 +1,7 @@
 /* Contacto */
 
+@import "variables";
+
 .tituloContacto {
     font-size: 3rem;
     margin-top: 35px;
@@ -8,6 +10,7 @@
     font-style: italic;
     padding: 20px;
     text-align: center;
+    color: $colorFont;
   }
   
   .contactoBackground {

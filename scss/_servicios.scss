@@ -1,65 +1,58 @@
 /* servicios */
 
 .contenidoServicios div:hover {
-    transform: translateY(-50px);
-  }
-   .backgroundServicios{
-       background-color: #d6e2e9;
+  transform: translateY(-50px);
+}
 
-   }
-  .tituloServicios {
-    font-size: 3rem;
-    margin-top: 35px;
-    font-family: 'EB Garamond', serif;
-    font-weight: 800;
-    font-style: italic;
-    padding: 20px;
+.tituloServicios {
+  font-size: 3rem;
+  margin-top: 35px;
+  font-family: 'EB Garamond', serif;
+  font-weight: 800;
+  font-style: italic;
+  padding: 20px;
+  text-align: center;
+}
+
+.contenidoServicios {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+
+  div {
+
+    border-width: 1px;
+    height: 58vh;
+    width: 33vw;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 30px;
     text-align: center;
-  }
-  
-  .contenidoServicios {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 20px;
-  
-    div {
-      h3 {
-        margin: 10px;
-        padding-left: 10px;
-        font-size: 1.2rem;
-      }
-  
-      h4 {
-        margin: 10px;
-        padding-left: 10px;
-      }
-  
-      /* border-style: solid;*/
-      border-width: 1px;
-      height: 45vh;
-      width: 25vw;
-      border-radius: 8px;
-      overflow: hidden;
-      margin: 30px;
-      text-align: center;
-      background: rgba(255, 255, 255, 0.575);
-      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  
-      img {
-        width: 25vw;
-        height: 28vh;
-  
-        /*margin: 10px;
-        padding: 10px;
-        transform: translatex(15px);*/
-      }
-  
-      p {
-        margin: 10px;
-        font-size: 0.8rem;
-      }
+    background: rgba(255, 255, 255, 0.575);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+    h3 {
+      margin: 10px;
+      padding-left: 10px;
+      font-size: 1.2rem;
+    }
+
+    h4 {
+      margin: 10px;
+      padding-left: 10px;
+    }
+
+    img {
+      width: 100%;
+      height: 31vh;
+    }
+
+    p {
+      margin: 10px;
+      font-size: 0.8rem;
     }
   }
+}

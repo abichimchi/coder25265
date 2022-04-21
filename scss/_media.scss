@@ -1,78 +1,110 @@
 /* MEDIA QUERIS */
 
 @media (max-width: 1024px) {
-    .navbar-nav {
-      margin-left: 6vw;
-    }
+  .navbar-nav {
+    margin-left: 6vw;
   }
-  
-  @media (max-width: 768px) {
-    .contenidoIndex div img {
-      width: 30vw;
+}
+
+@media (max-width: 768px) {
+
+  .bg-light{
+    height: 17vh;
+  }
+  .contenidoIndex div img {
+    width: 30vw;
+    height: 20vh;
+  }
+
+  .navbar-brand img {
+    width: 35vw;
+    height: 14vh;
+  }
+
+  .contenidoServicios div {
+    height: 40vh;
+    width: 40vw;
+
+    img {
+      width: 40vw;
       height: 20vh;
     }
-  
-    .navbar-brand img {
-      width: 10vw;
+  }
+
+  .contenidoStaff div img {
+    height: 25vh;
+  }
+}
+
+@media (max-width: 426px) {
+  .navbar-collapse {
+    background-color: #69504C
+  }
+  .carrusel{
+    img{
+      height: 53vh;
     }
-  
-    .contenidoServicios div {
-      height: 40vh;
-      width: 40vw;
-  
+  }
+  .contenidoIndex {
+    flex-wrap: wrap;
+
+    div {
+      p {
+        margin: 20px 50px 20px 50px;
+      }
+
       img {
-        width: 40vw;
-        height: 20vh;
+        width: 71vw;
+        height: 42vh;
+        margin-left: 25px;
       }
-    }
-  
-    .contenidoStaff div img {
-      height: 25vh;
+
+      h3 {
+        padding-top: 10px;
+      }
     }
   }
-  
-  @media (max-width: 426px) {
-    .contenidoIndex {
-      flex-wrap: wrap;
-  
-      div {
-        img {
-          width: 75vw;
-          height: 35vh;
-          margin-left: 25px;
-        }
-  
-        h3 {
-          padding-top: 10px;
+
+
+
+  .footer{
+    p{
+      display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    }
+
+    ul{
+      li{
+        img{
+          height: -1vh;
+          width: 7vw;
         }
       }
     }
-  
-    .footer div img {
-      height: 5vh;
-    }
-  
-    .contenidoServicios {
-      flex-wrap: wrap;
-  
-      div {
-        height: 65vh;
+  }
+
+  .contenidoServicios {
+    flex-wrap: wrap;
+
+    div {
+      height: 65vh;
+      width: 60vw;
+
+      img {
         width: 60vw;
-  
-        img {
-          width: 60vw;
-          height: 30vh;
-        }
+        height: 30vh;
       }
     }
-  
-    .contenidoStaff div img {
-      width: 50vw;
-      height: 50vh;
-    }
-  
-    .mapa {
-      width: 70vw;
-      height: 35vh;
-    }
   }
+
+  .contenidoStaff div img {
+    width: 50vw;
+    height: 50vh;
+  }
+
+  .mapa {
+    width: 70vw;
+    height: 35vh;
+  }
+}
