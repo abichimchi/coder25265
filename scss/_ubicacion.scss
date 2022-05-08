@@ -3,7 +3,7 @@
 /* ubicacion */
 
 .tituloUbicacion{
-    font-size: 3rem;
+    font-size: 6rem;
         margin-top: 35px;
         font-family: 'EB Garamond', serif;
         font-weight: 800;
@@ -19,12 +19,27 @@
     align-items: center;
     
   }
-  
-  .mapa {
-    width: 64vw;
+
+  .ubicacion{
+    .mapa{
+    width: 65vw;
     height: 59vh;
     margin-bottom: 20px;
   }
+
+  div{
+    h5{
+      font-size: 2rem;
+    }
+    p{
+      font-size: 2rem
+    }
+  }
+
+
+  }
+  
+  
   
   .contenidoUbicacion h3 {
     font-size: 1.5rem;
@@ -32,3 +47,18 @@
     color:$colorFont;
   }
   
+  .card-body{
+    text-align: center;
+
+    p{
+      margin-bottom: 0px;
+    }
+    a{
+      margin: 20px;
+    }
+  }
+
+  .card{
+    margin: 10rem;
+    margin-left: 28rem;
+  }

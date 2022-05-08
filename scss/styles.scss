@@ -40,78 +40,8 @@
 
 @import "contacto";
 
+@import "nav";
+
 @import "footer";
-
-
-.header {
-  position: sticky;
-  z-index: 1000;
-}
-
-  
-/* modificando clases de bootstrap 
-  
-      .bg-light {
-      background-color: #a9b5c0!important;
-      height: 10vh;
-  }*/
-
-  .navegacion{
-    z-index: 1000;
-    background-color: aqua;
-  }
-
-.nav-item {
-  padding: 20px;
-  font-size: 1.5rem;
-}
-
-.navbar-nav nav-item {
-  transition: background-color 3s;
-}
-
-li:hover {
-  background-color: rgba(255, 255, 255, 0.548);
-}
-
-.navbar-nav {
-  margin-left: 16vw;
-  font-family: 'EB Garamond', serif;
-  font-weight: 550;
-}
-
-.navbar-brand img {
-  width: 22vw;
-  height: 15vh;
-
-  /* padding: 5px; */
-  margin-left: 10px;
-}
-
-
-.menu li {
-  display: inline-block;
-  font-size: 1.5rem;
-  padding: 10px 65px;
-  font-family: 'Kaushan Script', cursive;
-  color: rgb(33, 190, 80);
-  justify-content: center;
-  align-items: center;
-  transition: background-color 3s;
-
-  &:hover {
-    background-color: red;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  img {
-    height: 100px;
-    width: 100px;
-  }
-}
-
 
 @import "media";

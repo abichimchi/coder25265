@@ -3,7 +3,7 @@
 @import "variables";
 
 .tituloContacto {
-    font-size: 3rem;
+    font-size: 6rem;
     margin-top: 35px;
     font-family: 'EB Garamond', serif;
     font-weight: 800;
@@ -17,6 +17,7 @@
     background-image: url("../imagenes/carrusel1-min.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    opacity: 60%;
   }
   
   .contenidoContacto {
